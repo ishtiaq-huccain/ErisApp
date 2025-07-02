@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      margin: 0;
+      padding: 8px;
+      background-color: #f5f7fa;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: auto;
+      background: #fff;
+      padding: 13px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo h1 {
+      font-size: 20px;
+      color: #003366;
+      margin: 0;
+    }
+
+    hr.section-divider {
+      border: none;
+      border-top: 1.5px solid #003366;
+      margin: 8px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-weight: bold;
+      color: #003366;
+      margin: 8px 0;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 8px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+
+    .form-group input {
+      padding: 3.5px;
+      font-size: 11px;
+      border: 1px solid #ccc;
+      background: #f2f8f5;
+      border-radius: 3px;
+    }
+
+    .owner-partner {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 47%;
+    }
+
+    .signature-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .signature-box {
+      flex: 1;
+      text-align: center;
+    }
+
+    .signature-box input {
+      width: 100%;
+      padding: 3.5px;
+      border: 1px solid #ccc;
+      background-color: #f2f8f5;
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    .footer {
+      font-size: 7.8px;
+      color: white;
+      background-color: #1c4772;
+      padding: 5px;
+      margin-top: 5px;
+      text-align: center;
+      line-height: 1.15;
+    }
+    .footer p {
+      margin: 2px 0 0 0;
+    }
+    .footer .footer-contact {
+      font-size: 7px;
+      line-height: 1;
+      margin-top: 1px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://dl.dropboxusercontent.com/scl/fi/p4brm6uec6orgqmj1wgjp/lg.png?rlkey=zzbeo0p64laywwglc457mfc6h&st=m36ty9m6&dl=0" alt="Logo" />
+      <h1><strong>FundFlow Capital</strong></h1>
+    </div>
+    <hr class="section-divider" />
+
+    <div class="section-title">Business Information</div>
+    <div class="form-grid">
+      <div class="form-group"><label>Legal Business Name</label><input type="text"></div>
+      <div class="form-group"><label>Industry</label><input type="text"></div>
+      <div class="form-group"><label>Business Start Date</label><input type="text"></div>
+      <div class="form-group"><label>Doing Business As</label><input type="text"></div>
+      <div class="form-group"><label>Website</label><input type="text"></div>
+      <div class="form-group"><label>Business Phone</label><input type="text"></div>
+      <div class="form-group"><label>Business Address</label><input type="text"></div>
+      <div class="form-group"><label>Tax Id / EIN</label><input type="text"></div>
+      <div class="form-group"><label>Business Entity Type</label><input type="text"></div>
+      <div class="form-group"><label>City</label><input type="text"></div>
+      <div class="form-group"><label>State</label><input type="text"></div>
+      <div class="form-group"><label>ZIP</label><input type="text"></div>
+      <div class="form-group"><label>Rent or Owner</label><input type="text"></div>
+      <div class="form-group"><label>State of Incorporation</label><input type="text"></div>
+      <div class="form-group"><label>Capital/Balance</label><input type="text"></div>
+      <div class="form-group"><label>Desired Funding</label><input type="text"></div>
+    </div>
+
+    <div class="owner-partner">
+      <div class="column">
+        <div class="section-title" style="text-align: left;">Owner Information</div>
+        <div class="form-group"><label>Officer/ Corporate Officer Name</label><input type="text"></div>
+        <div class="form-group"><label>Ownership %</label><input type="text"></div>
+        <div class="form-group"><label>Home Address</label><input type="text"></div>
+        <div class="form-group"><label>City</label><input type="text"></div>
+        <div class="form-group"><label>State</label><input type="text"></div>
+        <div class="form-group"><label>ZIP</label><input type="text"></div>
+        <div class="form-group"><label>Phone Number</label><input type="text"></div>
+        <div class="form-group"><label>Mobile Number</label><input type="text"></div>
+        <div class="form-group"><label>Email Address</label><input type="email"></div>
+        <div class="form-group"><label>FICO Score</label><input type="text"></div>
+        <div class="form-group"><label>Social Security Number</label><input type="text"></div>
+        <div class="form-group"><label>Date of Birth</label><input type="date"></div>
+      </div>
+
+      <div class="column">
+        <div class="section-title" style="text-align: left;">Partner Information (if applicable)</div>
+        <div class="form-group"><label>Owner/ Corporate Officer Name</label><input type="text"></div>
+        <div class="form-group"><label>Ownership %</label><input type="text"></div>
+        <div class="form-group"><label>Home Address</label><input type="text"></div>
+        <div class="form-group"><label>City</label><input type="text"></div>
+        <div class="form-group"><label>State</label><input type="text"></div>
+        <div class="form-group"><label>ZIP</label><input type="text"></div>
+        <div class="form-group"><label>Phone Number</label><input type="text"></div>
+        <div class="form-group"><label>Mobile Number</label><input type="text"></div>
+        <div class="form-group"><label>Email Address</label><input type="email"></div>
+        <div class="form-group"><label>FICO Score</label><input type="text"></div>
+        <div class="form-group"><label>Social Security Number</label><input type="text"></div>
+        <div class="form-group"><label>Date of Birth</label><input type="date"></div>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <div class="signature-section">
+      <div class="signature-box">
+        <label>Owner Signature</label>
+        <input type="text">
+        <label>Date</label>
+        <input type="date">
+      </div>
+      <div class="signature-box">
+        <label>Partner Signature</label>
+        <input type="text">
+        <label>Date</label>
+        <input type="date">
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        By signing above, you authorize FundFlow Capital, LLC. to obtain credit and background info from reporting agencies for commercial lending evaluation.
+      </p>
+      <p><strong>FundFlow Capital, LLC.</strong></p>
+      <p class="footer-contact">
+        2248 Broadway, New York, NY 10024 | 646-240-5006 | <a href="https://fundflowllc.com/" target="_blank">www.fundflowllc.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
